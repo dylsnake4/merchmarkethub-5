@@ -17,7 +17,7 @@
     <a href="contact.html">Contact</a>
   </nav>
   <section class="services">
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <h3>Independent Retailers</h3>
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <h3>Amazon & E-Commerce Sellers</h3>
@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <h3>Distribution Partnerships</h3>
@@ -53,20 +53,10 @@
       </div>
     </div>
   </section>
+
   <footer>
     <p>Merch Market Hub LLC • dylan@merchmarkethub.com</p>
     <p>&copy; 2025 - All Rights Reserved</p>
   </footer>
-
-  <script>
-    document.querySelectorAll('.flip-card').forEach(card => {
-      card.addEventListener('click', function () {
-        document.querySelectorAll('.flip-card').forEach(c => {
-          if (c !== this) c.classList.remove('flipped');
-        });
-        this.classList.toggle('flipped');
-      });
-    });
-  </script>
 </body>
 </html>
