@@ -1,40 +1,53 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f9fafb;
+  background-color: #ffffff;
   color: #111827;
 }
 
-.site-header {
+header {
   background-color: #1f2937;
   color: white;
+  padding: 1rem 1rem 0.5rem;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e5e7eb;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.hero {
   padding: 4rem 2rem;
   text-align: center;
 }
 
-.site-nav {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f3f4f6;
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.cover {
-  position: relative;
-  height: 80vh;
-  background-image: url('https://images.unsplash.com/photo-1607082349250-e7c9b2eead79?auto=format&fit=crop&w=1400&q=80');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
 }
 
-.cover-text {
-  background-color: rgba(0, 0, 0, 0.5);
+footer {
+  text-align: center;
   padding: 2rem;
-  border-radius: 8px;
+  background-color: #f9fafb;
+  font-size: 0.9rem;
+  color: #6b7280;
 }
 
 .cta-button {
@@ -46,12 +59,3 @@ body {
   display: inline-block;
   margin-top: 1rem;
 }
-
-.site-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #f9fafb;
-  font-size: 0.9rem;
-  color: #6b7280;
-}
-
