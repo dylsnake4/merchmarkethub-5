@@ -16,6 +16,7 @@
     <a href="services.html">Focus Areas</a>
     <a href="contact.html">Contact</a>
   </nav>
+
   <section class="services">
     <div class="flip-card">
       <div class="flip-card-inner">
@@ -53,6 +54,7 @@
       </div>
     </div>
   </section>
+
   <footer>
     <p>Merch Market Hub LLC • dylan@merchmarkethub.com</p>
     <p>&copy; 2025 - All Rights Reserved</p>
@@ -60,8 +62,10 @@
 
   <script>
     document.querySelectorAll('.flip-card').forEach(card => {
-      card.addEventListener('click', function () {
-        this.classList.toggle('flipped');
+      card.addEventListener('click', function (e) {
+        // Prevent child elements from hijacking the tap
+        if (!e.target.closest('.flip-card')) return;
+        card.classList.toggle('flipped');
       });
     });
   </script>
