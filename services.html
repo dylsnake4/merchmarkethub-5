@@ -6,6 +6,16 @@
   <title>Focus Areas | Merch Market Hub</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+  <script>
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      // Always toggle based on the flip-card, not the target
+      this.classList.toggle('flipped');
+    });
+  });
+</script>
 <body>
   <header style="background-color: #1f2937; color: white;">
     <h1>Our Focus Areas</h1>
